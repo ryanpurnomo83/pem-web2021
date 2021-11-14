@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="News.css">
+</head>
+<body>
+	<div class="row">
+		<div class="left" style="background-color:#bbb;">
+			<h2 style="text-align:center">News</h2>
+			<input type="text" id="mySearch" onkeyup="myFunction()" placeholder="Search.." title="Type in a category">
+	<ul id ="myMenu">
+		<li><a href="https://www.msn.com/en-gb/sport/american-football/joleon-lescott-compares-man-city-derby-win-to-famous-6-1-thrashing-of-manchester-united/ar-AAQqkI1">Joleon Lescott compares Man City derby win to famous 6-1 thrashing of Manchester United</a></li>
+		<li><a href="https://www.mancity.com/news/mens/pep-guardiola-manchester-united-manchester-city-press-conference-part-2-63771903">OLD TRAFFORD WIN SET THE IDEAL TEMPLATE, SAYS GUARDIOLA</a></li>
+		<li><a href=""></a></li>
+	</ul>
+</div>
+<div class="right" style="background-color:#91c9ef">
+	<h2 style="text-align:center;color:#290863">Top News</h2>
+	<hr>
+	<p></p>
+</div>
+</div>
+<script>
+	function myFunction() {
+		var input, filter, ul, li, a, i;
+		input = document.getElementById("mySearch");
+		filter = input.value.toUpperCase();
+		ul = document.getElementById("myMenu");
+		li = ul.getElementsByTagName("li");
+		for (i = 0; i< li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        if (a.innerHTML.toUpperCase().indexOf(filter) > -1){
+        	li[i].style.display="";
+        } else{
+        	li[i].style.display = "none";
+        }
+	  }
+	}
+</script>
+<br>
+<br>
+<br>
+<object text-align="left" style="margin-left:450px">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/nUSCnrvXS5s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></object>
+	</body>
+	</html>
