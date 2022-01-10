@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Mari Belajar Coding</title>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+	<script type="text/javascript">
+		$.getJSON("http://localhost/Minggu%2013/Praktikum%208/data.json", function(result){
+			console.log(result);
+			$.each(result, function(i){
+				document.getElementById("demo").innerHTML +="NIM :"+result[i].nim + "<br>Nama :" + result[i].nama + "<br>Alamat	:" + result[i].alamat + "<br><br>";
+			});
+		});
+	</script>
+</head>
+<body>
+	<div id="demo"></div>
+</body>
+</html>
