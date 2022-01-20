@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Prompt:wght@500&family=Sniglet&display=swap');
+
+*{
+	font-family: Sniglet,  cursive;
+}
+
+:root{
+	--clr: #ffffff;
+}
+
+body{
+	background: var(--clr);
+}
+
+div{
+position: relative;
+display: flex;
+justify-content: center ;
+align-items: center;
+}
+
+#Logo{
+width: 600px;
+height: 100px;
+background: #ff0000;
+border-radius: 20px;
+position: absolute;
+left: 30%;
+top: 50px;
+margin: 0 auto;
+}
+
+.tulisan{
+	text-align: center;
+	color: #fff;
+}
+
+.first{	
+	position: relative;
+	top: 300px;
+	text-align: center;
+}
+
+.second{
+	position: relative;
+	bottom: 22px;
+	text-align: center;
+	font-size: 22px;
+}
+
+#form{
+	display: flex;	
+	width: 282px;
+	height: 88px;
+	border-radius: 20px;
+	background: darkorange;
+	position: relative;
+	top: 450px;
+	left: 39.5%;
+}
+
+
+.align{
+	position: absolute;
+	bottom: 8px;
+	margin: 0 auto;
+}
+
+.LOGIN{
+	width: 137px;
+	height: 43px;
+	border-radius: 14px;
+	color: white;
+	background: lightgreen;
+}
+
+.SIGNUP{
+	width: 137px;
+	height: 43px;
+	border-radius: 14px;
+	color: white;
+	background: red;
+}
+
+#answer{
+	display: inline;
+}
+
+span{
+	padding-left: 5px;
+}

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<meta http-equiv="X-UA-Compatible">
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Prompt:wght@500&family=Sniglet&display=swap');
+
+		*{
+			font-family: Sniglet, cursive;
+		}
+
+		body{
+			background: #fff;
+		}
+
+		#Logo{
+		width: 600px;
+		height: 100px;
+		background: #ff0000;
+		border-radius: 20px;
+		position: absolute;
+		left: 30%;
+		top: 50px;
+		margin: 0 auto;
+		}
+
+		.title{
+			text-align: center;
+			color: #fff;
+		}
+
+
+		#part1{
+			text-align: center;
+			position: relative;
+			top: 245px; left: -80px;
+		}
+
+		.center{
+			text-align: center;
+		}
+
+		#next{
+			position: relative;
+			width: 150px;
+			height: 50px;
+			border-radius: 10px;
+			font-size: 35px;
+			color: #fff;
+			background: lightgreen;
+			top: 205px;
+		}
+
+		p{
+			text-align: center;
+			font-size: 30px;
+			position: relative;
+			top: 175px; left:130px;
+		}
+
+
+		.set-align{
+			display: inline;
+		}
+
+	</style>
+
+</head>
+<body>
+	
+<div id="Logo">
+<h1 class="title">Yuktranslate</h1>
+</div>
+
+<div class="set-align">
+<h1 id="part1">Mari kita mulai !!!</h1><p id="username"></p>
+
+<div class="center">
+<a href="Screen_8.html"><input type="button" value="next" id="next"></a>
+</div>
+</body>
+<script>
+		console.log(localStorage.getItem("text")); //this code shows the user input
+		var x = localStorage.getItem("text");
+		document.getElementById("username").innerHTML = x;
+	</script>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Prompt:wght@500&family=Sniglet&display=swap');
+
+		*{
+			font-family: Sniglet, cursive;
+		}
+
+		body{
+			background: #fff;
+		}
+
+		#Logo{
+		width: 600px;
+		height: 100px;
+		background: #ff0000;
+		border-radius: 20px;
+		position: absolute;
+		left: 30%;
+		top: 50px;
+		margin: 0 auto;
+		}
+
+		.title{
+			text-align: center;
+			color: #fff;
+		}
+
+		.main-frame{
+			text-align: center;
+			position: relative;
+			top: 150px;
+		}
+
+		#input{
+			width: 195px;
+			height: 30px;
+			border-radius: 15px;
+			text-indent: 10px;
+		}
+
+	</style>
+</head>
+<body>
+<div id="Logo">
+	<h1 class="title">Yuktranslate</h1> 
+</div>
+
+<div class="main-frame">
+	<div>
+		<h1>Ketikkan Biodata</h1>
+	</div>
+
+	<div>
+		<form action="Screen_3 (PilihBahasa).html">
+		<input type="text" id="input" placeholder="Masukkan username">
+	</div><br>
+
+	<div>
+		<input type="date" id="input" placeholder="Masukkan tanggal lahir">
+	</div><br>
+
+	<div>
+		<input type="text" id="input" placeholder="Tempat lahir">
+	</div><br>
+
+	<div>
+		<input type="text" id="input" placeholder="Gender">
+	</div><br>
+
+	<div>
+		<input type="text" id="input" placeholder="example@gmail.com">
+	</div>	
+	<br>
+	<div>
+		<input type="submit" value="submit" id="input" onclick="myUsername()">
+	</div>
+	</form>
+</div>
+
+</body>
+<script>
+	function myUsername(){
+		var name = document.getElementById("input").value;
+
+		localStorage.setItem("text",name);
+	}
+
+	localStorage.setItem("age", "30");
+	
+		console.log(localStorage.getItem("age"));
+</script>
+</html>

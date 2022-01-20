@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Prompt:wght@500&family=Sniglet&display=swap');
+
+		*{
+			font-family: Sniglet, cursive;
+		}
+
+		body{
+			background: #fff;
+		}
+
+		#Logo{
+		width: 600px;
+		height: 100px;
+		background: #ff0000;
+		border-radius: 20px;
+		position: absolute;
+		left: 30%;
+		top: 50px;
+		margin: 0 auto;
+		}
+
+		.title{
+			text-align: center;
+			color: #fff;
+		}
+
+
+		.PilihBahasa{
+			width: 600px;
+			height: 50px;
+			background: rgba(145,145,145,0.2);
+			position: absolute;
+			border-radius: 20px;
+			left: 30%; top: 250px;
+			
+		}
+
+		.first{
+			text-align: center;
+			position: relative;
+			bottom: 12px;
+		}
+
+
+		a{
+			text-decoration: none;
+			color: #000;
+		}
+
+		#option{
+
+		}
+
+		ul{
+			font-size: 30px;
+			position: absolute;
+			top: 300px; left: 430px;
+		}
+
+		li{
+			list-style-type: none;
+			animation-name: daftar;
+			animation-duration: 3s;
+		}
+
+		@keyframes daftar{
+			from{opacity: 0;}
+			to{opacity: 4;}
+		}
+
+
+
+	</style>
+</head>
+<body>
+<div id="Logo">
+	<h1 class="title">Yuktranslate</h1>
+</div>
+
+<div>
+<button class="PilihBahasa" onclick="language()">
+	<h1 class="first">Bahasa</h1></button>
+</div>
+
+<div id="option">
+	<ul>
+		<a href="Screen_6.html"><li>Aabinomin-Papua</li></a>
+		<a href="Screen_6.html"><li>Abai-Kalimantan</li></a>
+		<a href="Screen_6.html"><li>Abrap-Sumatera</li></a>
+		<a href="Screen_6.html"><li>Batak-Sumatera</li></a>
+		<a href="Screen_6.html"><li>Jawa-Jawa Timur</li></a>
+	</ul>
+</div>
+
+</body>
+<script>
+	var x;
+	function language(){
+		if(x == 1){
+			document.getElementById("option").style.display = "inline";
+			return x=0;
+		}
+		else{
+			document.getElementById("option").style.display = "none";
+			return x=1;
+		}
+	}
+	window.alert("Klik tombol bahasa untuk memilih bahasa yang akan dipilih");
+</script>
+</html>
